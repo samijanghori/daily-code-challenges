@@ -1,0 +1,12 @@
+Description:
+Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
+let's solve it!
+well when we have 3 numbers if the sum of 2 number is > the next number so these numbers are triangles
+
+-----------------------------------------------------------------
+<?php
+  
+function isTriangle(int $a, int $b, int $c): bool{
+  if($a + $b > $c && $b + $c > $a && $a + $c > $b) return true;
+  return false; // your code here
+}
