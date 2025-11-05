@@ -1,0 +1,8 @@
+Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.
+let's solve it:
+so we have a built_in function in php that changes the decimal to binary it is -> decbin() function
+function add_binary($a, $b) {
+  $sum = $a + $b;
+  $result = decbin($sum);
+  return $result;
+}
