@@ -7,11 +7,14 @@ Output: [3, 8, 6, 5, 4]
 
 
 ## Solution 
+
+## first define function swap
 function swap(&$a,&$b){
 	$t = $b;
 	$b = $a;
 	$a = $t;
 }
+## second the main function to find the odd values and swap them
 function sortArray(array $arr) {
 	for( $i=0; $i<sizeof($arr); $i++ )
 		for( $j=$i+1; $j<sizeof($arr); $j++ )
